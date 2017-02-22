@@ -21,6 +21,8 @@
 <style>
 	body {
 		font-family: "Roboto";
+		color:black;
+		background-color: white;
 	}
 
 	/*structure layout*/
@@ -59,6 +61,80 @@ header {
 	padding:0 15px;
 }
 
+/***************************************************************************************
+                                       MEDIA QUERIES
+***************************************************************************************/
+
+
+/* For 980px or less */
+@media screen and (max-width:980px) {
+
+			         #wrapper {
+			         	width: 94%;
+			         }
+										#content {
+											width: 41%;
+											padding: 1% 4%;
+										}
+			#middle {
+				width: 41%;
+				padding: 1% 4%;
+				margin: 0px 0px 5px 5px;
+				float:right;
+			}
+
+										header, footer {
+											padding: 1% 4%;
+										}
+
+}
+
+
+/* For 700px or less*/
+@media screen and (max-width: 600px){
+
+			#content {
+				width:auto;
+				float:none;
+			}
+			#middle {
+				width:auto;
+				float:none;
+				margin-left: 0px;
+			}
+			#sidebar {
+				width:auto;
+				float:none;
+			}
+}
+
+/* For 480 or less */
+@media screen and (max-width: 480px){
+
+				header {
+					height:auto;
+				}
+				h1 {
+					font-size: 2em;
+				}
+				#sidebar {
+					display:none;
+				}
+
+}
+
+#content {
+	background: white;
+}
+#sidebar {
+	background: white;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+#wrapper, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
 
 
 </style>
